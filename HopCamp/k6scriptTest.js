@@ -13,3 +13,5 @@ export default function () {
   });
   sleep(1);
 }
+
+//npm run generator

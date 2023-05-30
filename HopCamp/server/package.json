@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "generator": "concurrently \"node ./faker/campersAlsoSEED.cjs\" \"node ./faker/campingSpotSEED.cjs\" \"node ./faker/campSitesSEED.cjs\" \"node ./faker/photosSEED.cjs\" \"node ./faker/ratingSEED.cjs\" \"node ./faker/tentLocationsSEED.cjs\" \"node ./faker/thingsNearbySEED.cjs\""
   },
   "keywords": [],
   "author": "",
