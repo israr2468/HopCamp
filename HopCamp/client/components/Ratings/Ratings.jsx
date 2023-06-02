@@ -10,7 +10,7 @@ const Ratings = () => {
     useEffect(() => {
         const fetchRatings = async () => {
             try {
-                const response = await fetch("http://localhost:5001/api/ratings");
+                const response = await fetch("http://134.122.22.60:5001/api/ratings");
                 if (response.ok) {
                     const data = await response.json();
                     setRatingsData(data);
